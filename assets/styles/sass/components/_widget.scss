@@ -1,0 +1,18 @@
+.widget {
+  width: 168px;
+  height: 244px;
+  //border: 2px solid black;
+  &__img {
+    width: 168px;
+    height: 168px;
+    background: white;
+    border: 1px solid #F9804B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__text{
+    @include font(16px, 22.4px, 400);
+  }
+}

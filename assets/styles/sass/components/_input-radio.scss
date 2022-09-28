@@ -1,0 +1,29 @@
+.input-radio {
+  &__text {
+    @include font(16px, 22.4px, 400);
+  }
+}
+.input-radio-group {
+  display: flex;
+  gap: 50px;
+}
+.input-radio {
+  display: flex;
+  gap: 10px;
+}
+
+#input-radio-monthly {
+  width: 16px;
+  height: 16px;
+  border: 2px solod orange;
+  & input {
+    border: 3px solid red;
+  }
+  cursor: pointer;
+}
+#input-radio-once {
+  width: 16px;
+  height: 16px;
+  border: 2px solod orange;
+  cursor: pointer;
+}

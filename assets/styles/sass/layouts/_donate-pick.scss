@@ -1,0 +1,103 @@
+.donate-pick {
+  max-width: 1600px;
+  height: 1482px;
+  margin: 0 auto;
+  background: $color-orange-grad;
+  padding: 40px 0 180px 0;
+  &__wrapper {
+    padding: 0 220px;
+  }
+  &__ad {
+    @include font(36px, 46.8px, 400);
+    color: white;
+    padding-left: 220px;
+    letter-spacing: -1.6px;
+    margin-bottom: 10px;
+  }
+  &__sub-ad {
+    @include font(16px, 22.4px, 400);
+    color: white;
+    margin-bottom: 40px;
+  }
+  &__info {
+    color: #FE9013;
+    margin-bottom: 60px;
+  }
+  &__content {
+    width: 1160px;
+    height: 964px;
+    background-color: rgba(255, 255, 255, 0.52);
+    padding: 40px 92px 62px 92px;
+  }
+  &__title {
+    text-align: center;
+    color: #FE9013;
+    margin-bottom: 20px;
+    @include font(48px, 57.6px, 400);
+  }
+  &__subtitle {
+    color: $color-black-blue;
+    margin-bottom: 60px;
+  }
+  &__counter {
+    display: flex;
+    flex-direction: row;
+    //justify-content: center;
+    margin-bottom: 48px;
+  }
+  &__amount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 215px;
+    padding-top: 65px;
+    margin-right: 11px;
+    &-days {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 11px;
+    }
+    &-text {
+      @include font(16px, 22.4px, 400);
+    }
+    &-iconx {
+      margin-right: 62px;
+      padding-top: 100px;
+    }
+    &-iconx img {
+      padding-top: 40px;
+    }
+  }
+  &__text-progress-bar {
+    @include font(16px, 22.4px, 400);
+    margin-bottom: 10px;
+  }
+  &__input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    /*& input {
+      width: 268px;
+      height: 54px;
+      @include font(16px, 22.4px, 400);
+      color: #929699;
+    }*/
+  }
+  &__input-radio {
+    display: flex;
+    margin-left: 382px;
+    //justify-content: center;
+    margin-bottom: 31px;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  &__share-text {
+    display: flex;
+    justify-content: center;
+    @include font(16px, 22.4px, 400);
+  }
+}

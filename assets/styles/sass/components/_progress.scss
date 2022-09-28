@@ -1,0 +1,62 @@
+.progress-bar {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 976px;
+  height: 27px;
+  background-color: #404950;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  &__line {
+    width: 951px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    gap: 15px;
+    position: relative;
+    
+    //height: 2px;
+    //background-color: #72828E;
+  }
+
+  &__gray-line {
+    position: absolute;
+    width: 915px;
+    height: 2px;
+    background-color: #72828E;
+  }
+  &__ellipse {
+    position: relative;
+    display: flex;
+    width: 40px;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    & :hover {
+      cursor: pointer;
+      
+    }
+    &-hover {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      opacity: 0.3;
+      //background-color: black;
+      cursor: pointer;
+    }
+  }
+
+  &__roller-icon {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    & :hover {
+      cursor: pointer;
+    }
+  }
+}

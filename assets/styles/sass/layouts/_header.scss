@@ -1,0 +1,31 @@
+
+.header {
+  //@include fl();
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 63px;
+  }
+  margin:  0 auto;
+  padding: 0 220px;
+  width: 160rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-black;
+
+  &__logo {
+    
+  }
+
+  &__info {
+    color: white;
+    @include font(1.6rem, 22.4px, 500);
+    text-decoration: none;
+    & :hover {
+      color: orange;
+    }
+  }
+}
+

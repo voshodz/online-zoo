@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  column-gap: 58px;
+  &__link {
+    color: white;
+    @include font(1.6rem, 140%, 500);
+    
+  }
+}
+
+.navigation__link :hover {
+  color: #F9804B;
+}
+.navigation__link_active {
+  color: #F9804B;
+}

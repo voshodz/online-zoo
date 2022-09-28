@@ -1,0 +1,36 @@
+.price-bar-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 73px;
+}
+
+.price-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 57px;
+  margin-bottom: 50px;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+  &__icon img{
+    width: 10px;
+    height: 20px;
+  }
+  &__text {
+    @include font(26px, 36.4px, 500);
+    color: $color-black-blue;
+  }
+}
+
+.price-bar-second {
+  display: flex;
+  flex-direction: row;
+  height: 39.5px;
+  gap: 82px;
+}

@@ -1,0 +1,20 @@
+.input-group {
+  display: flex;
+  position: relative;
+  &__input {
+    width: 268px;
+      height: 54px;
+      @include font(16px, 22.4px, 400);
+      color: #929699;
+  }
+  &__icon {
+    position: absolute;
+    right: 13px;
+    top: 17px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

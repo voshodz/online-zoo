@@ -1,0 +1,50 @@
+.btn-primary {
+  width: 298px;
+  height: 54px;
+  margin: 0 auto;
+  background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  @include font(1.6rem, 22.4px, 500);
+  border-radius: 25px;
+  color: white;
+  border: none;
+  //transition: 2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background: #E47209;
+  }
+}
+.btn_orange {
+  background: #FE9013;
+}
+.btn_square {
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  width: 298px;;
+  height: 54px;
+  background-color: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  @include font(1.6rem, 22.4px, 500);
+  border-radius: 25px;
+
+}
+
+.btn-text {
+  @include font(1.6rem, 140%, 500);
+  color: white;
+}
+
+.btn-footer {
+  width: 129px;
+  height: 42px;
+  color: grey;
+  @include font(16px, 140%, 400);
+  border-radius: 2px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.btn-footer:hover {
+  color: #4B9200;
+  border: 2px solid #4B9200;
+}

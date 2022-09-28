@@ -1,0 +1,39 @@
+.tmonial {
+  
+  width: 268px;
+  height: 391px;
+  border: 2px solid pink;
+  padding: 15px 15px 19px 16px;
+  border-radius: 20px;
+  &__info {
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    @include font(16px, 19.2px, 400);
+  }
+  &__icon {
+    width: 37px;
+    height: 37px;
+  }
+  &__adress {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+  }
+  &__country {
+    @include font(15px, 18px, 300);
+  }
+  &__last-seen {
+    @include font(15px, 18px, 300);
+  }
+  &__dot {
+    width: 5px;
+
+  }
+  &__text {
+    @include font(15px, 18px, 300);
+    color: $color-gray;
+  }
+  
+}

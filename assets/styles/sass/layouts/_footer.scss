@@ -1,0 +1,128 @@
+.footer {
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 443px;
+  background-color: black;
+  padding-top: 40px;
+  padding-right: 220px;
+  padding-left: 220px;
+  padding-bottom: 50px;
+  &__first-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+  &__second-row {
+    margin-bottom: 42px;
+  }
+  &__third-row {
+    display: flex;
+    //justify-content: space-between;
+    flex-direction: row;
+  }
+  &__logo {
+    width: 82px;
+    height: 52px;
+    color: white;
+    @include font(19px, 22.82px, 400);
+    border: 0.5px solid #FFFFFF;
+    border-radius: 2px;
+  }
+
+  &__subscribe {
+    display: flex;
+    flex-direction: column;
+    &__text {
+      @include font(24px, 28.8px, 400);
+      color: white;
+      margin-bottom: 14px;
+    }
+    &__input-container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+    &__input {
+      padding-left: 10px;
+      width: 228px;
+      height: 42px;
+      @include font(16px, 22.4px, 400);
+      border: 2px solid orange;
+      background-color: black;
+    }
+  }
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-right: 288px;
+    &-container {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      transition:  2s ease-in-out;
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 26px;
+      height: 26px;
+      background: grey;
+      border-radius: 50%;  
+    }
+
+    &-icon img {
+      width: 50%;
+    }
+    &-text {
+      color: white;
+      @include font(16px, 22.4px, 400);
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    column-gap: 58px;
+    margin-right: 169px;
+    &-link {
+      @include font(16px, 22.4px, 400);
+      color: white;
+    }
+  }
+  
+  &__author {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    transition: 2s ease-in-out;
+    @include font(16px, 130%, 100);
+  }
+
+}
+
+.footer__subscribe__input {
+  color: white;
+}
+.footer__author:hover {
+  cursor: pointer;
+  .footer__author-name {
+    color: #4B9200;
+  }
+  .footer__year {
+    color: #4B9200;
+  }
+}
+
+.footer__socials-container:hover {
+  //font-size: 72px;
+  .footer__socials-icon {
+    background-color: #4B9200;
+  }
+  .footer__socials-text {
+    color: #4B9200;
+  }
+}
+
